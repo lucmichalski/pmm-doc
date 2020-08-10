@@ -93,9 +93,6 @@ nav:
         - Adding External Services: 'manage/client-external.md'
         - Removing monitoring services with pmm-admin remove: 'manage/client-remove.md'
         - Annotating important Application Events: 'manage/client-annotations.md'
-    - Percona Platform=platform/:
-        - 'platform/intro.md'
-        - Security Threat Tool: 'platform/stt.md'
     - Service Configuration for Best Results=manage/index-services.html:
         - MySQL=manage/index-services-mysql.html:
             - 'manage/conf-mysql-slow-log.md'
@@ -120,6 +117,9 @@ nav:
         - 'metrics-monitor-dashboards.md'
         - 'metrics-monitor-navigation.md'
     - The Query Analytics Dashboard: 'qan-intro.md'
+    - Percona Platform=platform/:
+        - 'platform/intro.md'
+        - Security Threat Tool: 'platform/stt.md'
     - Dashboards Reference=dashboards/:
         - Insight=dashboards/index.html#insight:
             - Advanced Data Exploration: 'dashboards/dashboard-advanced-data-exploration.md'
