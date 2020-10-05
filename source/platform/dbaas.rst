@@ -2,7 +2,7 @@
 PMM DBaaS
 #########
 
-This page is where you view, add, and delete Kubernetes clusters.
+This page is where you view, add, and delete Kubernetes and Database clusters.
 
 To access it, select *PMM > PMM DBaaS*.
 
@@ -12,13 +12,15 @@ To access it, select *PMM > PMM DBaaS*.
 Add a Kubernetes cluster
 ************************
 
-1. Click *Add new Kubernetes Cluster*
+1. Select the *Kubernetes Cluster* tab.
 
-2. Enter values for the *Kubernetes Cluster Name* and *Kubeconfig file* in the relevant fields.
+2. Click *Add new Kubernetes Cluster*
+
+3. Enter values for the *Kubernetes Cluster Name* and *Kubeconfig file* in the relevant fields.
 
    .. image:: /_images/PMM_DBaaS_Add_Kubernetes_Cluster.jpg
 
-3. Click *Add*.
+4. Click *Add*.
 
 ***************************
 Delete a Kubernetes cluster
@@ -29,3 +31,17 @@ Delete a Kubernetes cluster
 2. Confirm the action by clicking *Proceed*, or abandon by clicking *Cancel*.
 
    .. image:: /_images/PMM_DBaaS_Add_Kubernetes_Cluster.jpg
+
+
+**********************
+Add a Database Cluster
+**********************
+
+1. Add at least one Kubernetes cluster.
+
+2. Select the *DB Cluster* tab.
+
+
+*************************
+Delete a Database Cluster
+*************************
