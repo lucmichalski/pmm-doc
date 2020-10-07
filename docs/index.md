@@ -1,10 +1,11 @@
 # Percona Monitoring and Management
 
 Jump to:
-[Installation](install/index-server.md){: .btn .btn-primary .md-button }
-[Using PMM](index-using-pmm-metrics-monitor.md){: .btn .btn-primary }
-[Configuration](manage/index-services.md){: .btn .btn-primary }
-[Dashboards](dashboards/index.md){: .btn .btn-primary }
+[Installation](install/index-server.md){: .btn .btn-primary .md-button .md-button--primary }
+[Configuration](manage/index-services.md){: .btn .btn-primary .md-button .md-button--primary }
+[Using PMM](index-using-pmm-metrics-monitor.md){: .btn .btn-primary .md-button .md-button--primary }
+[Dashboards](dashboards/index.md){: .btn .btn-primary .md-button .md-button--primary }
+[Release Notes](release-notes/index.md){: .btn .btn-primary .md-button .md-button--primary }
 
 ----
 
