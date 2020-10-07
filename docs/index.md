@@ -1,5 +1,18 @@
 # Percona Monitoring and Management
 
+Quick Links
+
+
+[Installation](install/index-server.md){: .md-button .md-button--primary}
+
+[Using PMM](index-using-pmm-metrics-monitor.md){: .md-button}
+
+[Configuration](manage/index-services.md){: .md-button}
+
+[Dashboards](dashboards/index.md){: .md-button}
+
+
+
 - [What is Percona Monitoring and Management?](introduction.md)
 - [PMM Concepts](concepts/index.md)
     - [Client/Server Architecture - an Overview](concepts/architecture.md)

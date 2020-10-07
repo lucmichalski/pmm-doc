@@ -1,5 +1,5 @@
 site_name: Percona Monitoring and Management Documentation
-site_url: https://new.percona.com/doc/percona-monitoring-and-management/mkdocs/
+#site_url: https://new.percona.com/doc/percona-monitoring-and-management/mkdocs/
 repo_name: percona/pmm-doc
 repo_url: https://github.com/percona/pmm-doc
 edit_uri: edit/master/docs/
@@ -45,6 +45,7 @@ markdown_extensions:
     - pymdownx.superfences
     - pymdownx.highlight:
         linenums: false
+    - attr_list
 
 plugins:
     - search
