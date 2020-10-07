@@ -3,13 +3,13 @@
 Quick Links
 
 
-[Installation](install/index-server.md){: .md-button .md-button--primary}
+[Installation](install/index-server.md){: .btn .btn-primary }
 
-[Using PMM](index-using-pmm-metrics-monitor.md){: .md-button}
+[Using PMM](index-using-pmm-metrics-monitor.md){: .btn .btn-primary }
 
-[Configuration](manage/index-services.md){: .md-button}
+[Configuration](manage/index-services.md){: .btn .btn-primary }
 
-[Dashboards](dashboards/index.md){: .md-button}
+[Dashboards](dashboards/index.md){: .btn .btn-primary }
 
 
 
