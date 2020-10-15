@@ -20,4 +20,6 @@ Percona Monitoring and Management
    glossary-terminology
    release-notes/index
    faq
+   faqmd
    reference/index
+   md/qan-intro

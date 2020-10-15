@@ -13,6 +13,9 @@
 
 import sys
 import os
+# At top on conf.py
+from sphinx_markdown_parser.transform import AutoStructify
+from sphinx_markdown_parser.parser import MarkdownParser
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -32,7 +35,8 @@ sys.path.append(os.path.abspath('ext'))
 extensions = [
 #    'sphinx_markdown_builder', # For markdown migration - requires installation
     'sphinx.ext.extlinks',    # For :jirabug:
-    'fulltoc'                 # For js/toggle-menu.js (below) - Modifies left navbar to include expand/collapse buttons on percona.com
+    'fulltoc',                 # For js/toggle-menu.js (below) - Modifies left navbar to include expand/collapse buttons on percona.com
+    'sphinxcontrib.srclinks'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -155,7 +159,7 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = { '**': [
-    'edit.html',
+    'srclinks.html',
     'localtoc.html',
     'relations.html'
     ] }
@@ -200,6 +204,10 @@ html_context = {
     'edit_uri_rst': 'edit/master/source',
     'edit_uri_md': 'edit/master/docs'
 }
+
+srclink_project = 'https://github.com/percona/pmm-doc'
+srclink_src_path = 'source/'
+srclink_branch = 'master'
 
 # -- Options for LaTeX output --------------------------------------------------
 
@@ -272,3 +280,21 @@ man_pages = [
 
 def setup(app):
     app.add_javascript('js/toggle-menu.js')
+    app.add_source_suffix('.md', 'markdown')
+    app.add_source_parser(MarkdownParser)
+    app.add_config_value('markdown_parser_config', {
+        'auto_toc_tree_section': 'Content',
+        'enable_auto_toc_tree': True,
+        'enable_eval_rst': True,
+        'extensions': [
+            'extra',
+            'nl2br',
+            'sane_lists',
+            'smarty',
+            'toc',
+            'wikilinks',
+            'pymdownx.arithmatex',
+        ],
+    }, True)
+    # in setup function after configuration of the parser
+    app.add_transform(AutoStructify)
