@@ -10,6 +10,47 @@ The PMM platform is based on a client-server model that enables scalability. It 
 
 ![image](../_images/diagram.pmm.client-server-platform.png)
 
+```plantuml
+
+@startuml "bigbankplc"
+!includeurl https://raw.githubusercontent.com/stawirej/C4-PlantUML/master/C4_Container.puml
+
+' https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Container.puml
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 200
+
+LAYOUT_TOP_DOWN()
+'LAYOUT_AS_SKETCH()
+'LAYOUT_WITH_LEGEND()
+
+Person(customer, "User")
+
+
+System_Boundary(pmm, "Percona Monitoring and Management") {
+
+System(client, "PMM Client","")
+System(server, "PMM Server", "")
+System(platform, "Percona Platform","")
+
+ContainerDb(database, "Database","","")
+Container(application,"Customer Application","")
+}
+
+Rel(customer, client, "Configures")
+Rel(customer, server, "Uses")
+
+Rel_R(client, server, "")
+Rel_R(server, platform,"")
+
+Rel(client, database,"Monitors")
+Rel_L(application,database, "")
+
+@enduml
+```
+
 The modules are packaged for easy installation and usage. It is assumed that the user should not need to understand what are the exact tools that make up each module and how they interact. However, if you want to leverage the full potential of PMM, the internal structure is important.
 
 PMM is a collection of tools designed to seamlessly work together.  Some are developed by Percona and some are third-party open-source tools.
