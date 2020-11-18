@@ -33,9 +33,10 @@ markdown_extensions:
         baselevel: 1
         toc_depth: "2-3"
         anchorlink: True
-#        permalink: 
     - admonition
     - def_list
+    - markdown_include.include:
+        base_path: docs/_include
     - smarty:
         smart_angled_quotes: True
     - pymdownx.mark
