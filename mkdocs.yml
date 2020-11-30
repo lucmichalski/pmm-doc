@@ -61,14 +61,14 @@ extra:
 
 nav:
     - index.md
-    - Setting up=setting-up/:
+    - Setting up:
         - setting-up/index.md
-        - Server=setting-up/server/:
+        - Server:
             - setting-up/server/index.md
             - setting-up/server/docker.md
             - setting-up/server/virtual-appliance.md
             - setting-up/server/aws.md
-        - Client=setting-up/client:
+        - Client:
             - setting-up/client/index.md
             - setting-up/client/mysql.md
             - setting-up/client/percona-server.md
@@ -78,23 +78,23 @@ nav:
             - setting-up/client/aws.md
             - setting-up/client/linux.md
             - setting-up/client/external.md
-    - Using=using/:
+    - Using:
         - using/index.md
         - using/interface.md
         - using/query-analytics.md
-        - Percona Platform=using/platform/:
+        - Percona Platform:
             - using/platform/index.md
 #            - using/platform/dbaas.md
             - using/platform/security-threat-tool.md
-    - How to=how-to/:
+    - How to:
         - how-to/index.md
         - how-to/upgrade.md
         - how-to/secure.md
         - how-to/optimize.md
         - how-to/configure.md
-    - Details=details/:
+    - Details:
         - details/index.md
-        - Dashboards=details/dashboards/:
+        - Dashboards:
             - details/dashboards/index.md
             - Insight:
                 - Advanced Data Exploration: 'details/dashboards/dashboard-advanced-data-exploration.md'
@@ -153,12 +153,12 @@ nav:
                 - PXC/Galera Node Summary: 'details/dashboards/dashboard-pxc-galera-node-summary.md'
                 - PXC/Galera Cluster Summary: 'details/dashboards/dashboard-pxc-galera-cluster-summary.md'
                 - PXC/Galera Nodes Compare: 'details/dashboards/dashboard-pxc-galera-nodes-compare.md'
-        - Commands=details/commands/:
+        - Commands:
             - details/commands/pmm-admin.md
         - details/api.md
         - details/glossary.md
     - faq.md
-    - Release Notes=release-notes/:
+    - Release Notes:
         - release-notes/2.11.1.md
         - release-notes/2.11.0.md
         - release-notes/2.10.1.md
